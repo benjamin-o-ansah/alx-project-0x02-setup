@@ -1,7 +1,8 @@
 // components/common/Card.tsx
 
-import { CardProps } from '../../interfaces'; // Adjust path based on your structure
+// Adjust path based on your structure
 import React from 'react';
+import { type CardProps } from '@/interfaces';
 
 const Card: React.FC<CardProps> = ({ title, content }) => {
   return (

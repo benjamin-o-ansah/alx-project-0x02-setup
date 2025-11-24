@@ -4,8 +4,10 @@
 
 import React from 'react';
 import Head from 'next/head';
-import Header from '../components/layout/Header'; // Assuming Header is used for layout
-import Card from '../components/common/Card'; // Import the new Card component
+import Header from '@/components/layout/Header'; // Using path alias @/
+import Card from '@/components/common/Card';   // Using path alias @/
+// import Header from '../components/layout/Header'; // Assuming Header is used for layout
+// import Card from '../components/common/Card'; // Import the new Card component
 
 const HomePage: React.FC = () => {
   return (
