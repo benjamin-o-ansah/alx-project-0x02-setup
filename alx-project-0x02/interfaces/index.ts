@@ -24,3 +24,18 @@ export interface PostModalProps {
   // Callback function to send the new post data back to the parent
   onSave: (post: Omit<Post, 'id'>) => void; 
 }
+
+
+// ----------------------------------------------------------------
+// NEW INTERFACES FOR BUTTON COMPONENT
+// ----------------------------------------------------------------
+
+// Define possible string literal types for better type checking
+export type ButtonSize = 'small' | 'medium' | 'large';
+export type ButtonShape = 'rounded-sm' | 'rounded-md' | 'rounded-full';
+
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  size?: ButtonSize;
+  shape?: ButtonShape;
+  children: React.ReactNode;
+}
