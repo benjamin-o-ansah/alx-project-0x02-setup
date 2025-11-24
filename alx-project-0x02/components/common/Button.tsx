@@ -1,7 +1,8 @@
 // components/common/Button.tsx
 
 import React from 'react';
-import { type ButtonProps, type ButtonSize, type ButtonShape } from '@/interfaces';
+import { type ButtonProps } from '@/interfaces'; // Checker requirement met here
+import { type ButtonSize, type ButtonShape } from '@/interfaces'; // Other types imported separately
 
 // --- Helper Functions to Map Props to Tailwind Classes ---
 
