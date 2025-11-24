@@ -1,4 +1,5 @@
-interface WelcomeMessageProps {
-    message: string;
-    person: string;
+// interfaces/index.ts
+
+export interface WelcomeProps {
+  appName: string;
 }
