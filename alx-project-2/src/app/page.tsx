@@ -1,5 +1,5 @@
 import Image from "next/image";
-import WelcomeMessage from "@/pages";
+import WelcomeMessage from "../../pages";
 
 export default function Home() {
   return (
