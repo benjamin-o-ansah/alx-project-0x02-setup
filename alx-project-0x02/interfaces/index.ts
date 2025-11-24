@@ -39,3 +39,13 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   shape?: ButtonShape;
   children: React.ReactNode;
 }
+
+export interface PostCardProps {
+  title: string;
+  body: string; // Using 'body' from the API data
+  userId: number;
+}
+
+export interface PostsPageProps {
+  posts: PostCardProps[];
+}
