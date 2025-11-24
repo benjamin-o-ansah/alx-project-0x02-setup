@@ -49,3 +49,39 @@ export interface PostCardProps {
 export interface PostsPageProps {
   posts: PostCardProps[];
 }
+
+// ----------------------------------------------------------------
+// NEW INTERFACES FOR USER COMPONENT
+// ----------------------------------------------------------------
+
+export interface Address {
+  street: string;
+  suite: string;
+  city: string;
+  zipcode: string;
+  // We can ignore 'geo' for this exercise
+}
+
+// Full User interface matching the JSONPlaceholder API structure
+export interface User {
+  id: number;
+  name: string;
+  username: string;
+  email: string;
+  address: Address;
+  phone: string;
+  website: string;
+  company: {
+    name: string;
+    catchPhrase: string;
+    bs: string;
+  };
+}
+
+// Props required for the UserCard component
+export interface UserCardProps {
+  name: string;
+  email: string;
+  address: Address;
+  phone: string;
+}
